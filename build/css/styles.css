@@ -115,6 +115,10 @@ img {
   padding-right: 15px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a,
 h1,
 h2,
@@ -129,11 +133,8 @@ a {
   text-decoration: none;
 }
 
-.footer {
-  padding: 27px 0 28px;
-}
-
 .footer__menu {
+  padding: 27px 0 28px;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
@@ -191,6 +192,123 @@ a {
   background: inherit;
   cursor: pointer;
   padding: 0;
+}
+
+.footer__content {
+  padding: 55px 0 110px;
+}
+
+.footer__content .contentOffer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.footer__content .contentOffer .mainOffer {
+  max-width: 555px;
+  width: 100%;
+}
+
+.footer__content .contentOffer .mainOffer__textBrand {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.145em;
+  text-transform: uppercase;
+  color: #C72535;
+  opacity: 0.6;
+  margin: 3px 0;
+}
+
+.footer__content .contentOffer .mainOffer__textTitle {
+  font-weight: normal;
+  font-size: 61px;
+  line-height: 73px;
+  color: #030D15;
+}
+
+.footer__content .contentOffer .mainOffer__textTitleSpan {
+  position: relative;
+  font-weight: 600;
+  font-size: 61px;
+  line-height: 73px;
+  color: #247CC0;
+}
+
+.footer__content .contentOffer .mainOffer__textTitleSpan::after {
+  content: '';
+  position: absolute;
+  width: 105%;
+  height: 75%;
+  background-color: #247CC0;
+  opacity: 0.1;
+  left: -2.5%;
+}
+
+.footer__content .contentOffer .mainOffer__textSubTitle {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #030D15;
+  opacity: 0.6;
+  padding: 29px 0;
+}
+
+.footer__content .contentOffer .mainOffer__price {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.footer__content .contentOffer .mainOffer__priceButton {
+  margin-top: 7px;
+  margin-right: 31px;
+  padding: 16px 35px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #247CC0;
+  border: none;
+  cursor: pointer;
+}
+
+.footer__content .contentOffer .mainOffer__priceCoast {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #030D15;
+  padding-right: 16px;
+}
+
+.footer__content .contentOffer .mainOffer__priceOldCoast {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 27px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #030D15;
+}
+
+.footer__content .contentOffer__visualBlockImage {
+  margin-left: 28px;
+}
+
+.footer__content .partners {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 76px 118px;
+  box-shadow: 0px 100px 80px rgba(174, 174, 174, 0.08), 0px 43.751px 36.4414px rgba(174, 174, 174, 0.0575083), 0px 19.8401px 19.1406px rgba(174, 174, 174, 0.0476886), 0px 6.77214px 9.61331px rgba(174, 174, 174, 0.04), 0px 0.190079px 4.14347px rgba(174, 174, 174, 0.0323114), 0px -1.73968px 1.20532px rgba(174, 174, 174, 0.0224916);
 }
 
 @media screen and (max-width: 992px) {
