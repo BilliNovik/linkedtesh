@@ -1,0 +1,53 @@
+@import "smart-grid.less";
+@import "global.less";
+
+.footer{
+    padding: 27px 0 28px;
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logoBox{
+            display: flex;
+            align-items: center;
+            &__text{
+                margin-left: 8px;
+            }
+        }
+        .menu{
+            &__link{
+                position: relative;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 23px;
+                text-transform: uppercase;
+                color: #030D15;
+                padding-right: 18px;
+                margin: 0 20px;
+                &::after{
+                    content: '';
+                    right: 0;
+                    top: calc(50% - 3px);
+                    display: block;
+                    position: absolute;
+                    width: 10px;
+                    height: 6px;
+                    background: url(../img/menu__linkRange.svg);
+                }
+            }
+        }
+        .accountMenu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 127px;
+            width: 100%;
+            &__button{
+                border: none;
+                background: inherit;
+                cursor: pointer;
+                padding: 0;
+            }
+        }
+    }
+}
