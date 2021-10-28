@@ -51,7 +51,7 @@
         }
     }
     &__content{
-        padding: 55px 0 110px;
+        padding: 55px 0 132px;
         .contentOffer{
             display: flex;
             align-items: center;
@@ -141,8 +141,96 @@
             align-items: center;
             flex-direction: row-reverse;
             justify-content: space-between;
-            padding: 76px 118px;
+            padding: calc(76px - 30px) calc(118px - 30px) ;
             box-shadow: 0px 100px 80px rgba(174, 174, 174, 0.08), 0px 43.751px 36.4414px rgba(174, 174, 174, 0.0575083), 0px 19.8401px 19.1406px rgba(174, 174, 174, 0.0476886), 0px 6.77214px 9.61331px rgba(174, 174, 174, 0.04), 0px 0.190079px 4.14347px rgba(174, 174, 174, 0.0323114), 0px -1.73968px 1.20532px rgba(174, 174, 174, 0.0224916);
+            &Item{
+                padding: 15px;
+            }
+        }
+    }
+}
+.offerProduct{
+    padding-bottom: 75px;
+    .offerProductItems{
+        .row-flex();
+        
+        .offerProductItem{
+            .col();
+            .size(6);
+            
+            display: flex;
+            
+            &__visual{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                &::after{
+                    content: '';
+                    right: -22px;
+                    top: -22px;
+                    display: block;
+                    position: absolute;
+                    width: 44px;
+                    height: 44px;
+                    background: url(../img/offerProductItem=after.png);
+                }
+            }
+            &__textInfo{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 30px;
+                width: 50%;
+
+                &Title{
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 40px;
+                    color: #030D15;
+                    padding: 9px 0;
+                }
+                &Text{
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #030D15;
+                    opacity: 0.6;
+                    padding-bottom: 20px;
+                }
+                &Price{
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 27px;
+                    color: #030D15;
+                    padding-bottom: 10px;
+                    &Old{
+                        position: relative;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 27px;
+                        text-decoration-line: line-through;
+                        color: #030D15;
+                        opacity: 0.5;
+                        padding-left: 10px;
+                        &::after{
+                            content: '/';
+                            left: 2px;
+                            position: absolute;
+                            font-family: Hind Siliguri;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 27px;
+                            color: #030D15;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
         }
     }
 }

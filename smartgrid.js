@@ -1,5 +1,5 @@
 module.exports = {
-	columns: 30,
+	columns: 12,
 	offset: "35px",
 	container: {
 		maxWidth: "1140px",
