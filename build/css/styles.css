@@ -294,7 +294,10 @@ a {
 }
 
 .footer__content .contentOffer__visualBlockImage {
-  margin-left: 28px;
+  -webkit-transform: translateX(87px);
+      -ms-transform: translateX(87px);
+          transform: translateX(87px);
+  max-width: 643px;
 }
 
 .footer__content .partners {
@@ -335,6 +338,8 @@ a {
   width: calc(50% - 35px);
   display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .offerProduct .offerProductItems .offerProductItem__visual {
@@ -345,7 +350,7 @@ a {
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
-  width: 50%;
+  width: calc(50% - 17.5px);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -370,8 +375,7 @@ a {
           flex-direction: column;
   -webkit-box-pack: center;
           justify-content: center;
-  padding-left: 30px;
-  width: 50%;
+  width: calc(50% - 17.5px);
 }
 
 .offerProduct .offerProductItems .offerProductItem__textInfoTitle {
@@ -422,6 +426,73 @@ a {
   line-height: 27px;
   color: #030D15;
   opacity: 0.5;
+}
+
+.interest {
+  padding: 75px 0 55px;
+}
+
+.interest .interestItems {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -17.5px;
+  margin-right: -17.5px;
+}
+
+.interest .interestItems .interestItem {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 17.5px;
+  margin-right: 17.5px;
+  width: calc(50% - 35px);
+  position: relative;
+  background: -webkit-linear-gradient(192.74deg, #008BF0 -13.2%, #D943C9 130.95%);
+  background: linear-gradient(257.26deg, #008BF0 -13.2%, #D943C9 130.95%);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 75px 35px 74px;
+}
+
+.interest .interestItems .interestItem__info {
+  max-width: 285px;
+  width: 100%;
+}
+
+.interest .interestItems .interestItem__infoText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #F4F9FC;
+  opacity: 0.6;
+  padding-bottom: 5px;
+}
+
+.interest .interestItems .interestItem__infoGeneral {
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #F4F9FC;
+  padding-bottom: 7px;
+}
+
+.interest .interestItems .interestItem__infoLink {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 27px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F4F9FC;
+}
+
+.interest .interestItems .interestItem__visual {
+  position: absolute;
+  right: 0;
 }
 
 @media screen and (max-width: 992px) {

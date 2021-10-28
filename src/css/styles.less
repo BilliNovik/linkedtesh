@@ -132,7 +132,8 @@
             }
             &__visualBlock{
                 &Image{
-                    margin-left: 28px;
+                    transform: translateX(87px);
+                    max-width: 643px;
                 }
             }
         }
@@ -159,13 +160,14 @@
             .size(6);
             
             display: flex;
+            justify-content: space-between;
             
             &__visual{
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 50%;
+                width: calc(50% - 17.5px);
                 border: 1px solid rgba(0, 0, 0, 0.1);
                 &::after{
                     content: '';
@@ -183,8 +185,7 @@
                 align-items: flex-start;
                 flex-direction: column;
                 justify-content: center;
-                padding-left: 30px;
-                width: 50%;
+                width: calc(50% - 17.5px);
 
                 &Title{
                     font-weight: 600;
@@ -230,6 +231,57 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+.interest{
+    padding: 75px 0 55px;
+    .interestItems{
+        .row-flex();
+
+        .interestItem{
+            .col();
+            .size(6);
+
+            position: relative;
+            background: linear-gradient(257.26deg, #008BF0 -13.2%, #D943C9 130.95%);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            padding: 75px 35px 74px;
+            &__info{
+                max-width: 285px;
+                width: 100%;
+                &Text{
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 27px;
+                    text-transform: uppercase;
+                    color: #F4F9FC;
+                    opacity: 0.6;
+                    padding-bottom: 5px;
+                }
+                &General{
+                    font-weight: 600;
+                    font-size: 31px;
+                    line-height: 40px;
+                    text-transform: uppercase;
+                    color: #F4F9FC;
+                    padding-bottom: 7px;
+                }
+                &Link{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 27px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #F4F9FC;
+                }
+            }
+            &__visual{
+                position: absolute;
+                right: 0;
             }
         }
     }
