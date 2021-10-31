@@ -818,6 +818,126 @@ a {
   width: 283px;
 }
 
+.aboutForm {
+  background: #F4F9FC;
+  padding: 100px 0;
+}
+
+.aboutForm .aboutFormInner {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.aboutForm .aboutFormInner__text {
+  max-width: 360px;
+  width: 100%;
+}
+
+.aboutForm .aboutFormInner__textGeneral {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40px;
+  color: #030D15;
+  padding-bottom: 8px;
+}
+
+.aboutForm .aboutFormInner__textSubGeneral {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #030D15;
+  opacity: 0.6;
+}
+
+.aboutForm .aboutFormInner__subscribe {
+  width: 100%;
+}
+
+.aboutForm .aboutFormInner__subscribeForm {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: end;
+}
+
+.aboutForm .aboutFormInner__subscribeFormText {
+  font-family: Hind Siliguri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #030D15;
+  padding: 15px 26px 14px;
+  max-width: 335px;
+  width: 100%;
+}
+
+.aboutForm .aboutFormInner__subscribeFormText ::-webkit-input-placeholder {
+  font-family: Hind Siliguri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #030D15;
+  opacity: 0.4;
+}
+
+.aboutForm .aboutFormInner__subscribeFormText ::-moz-placeholder {
+  font-family: Hind Siliguri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #030D15;
+  opacity: 0.4;
+}
+
+.aboutForm .aboutFormInner__subscribeFormText :-ms-input-placeholder {
+  font-family: Hind Siliguri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #030D15;
+  opacity: 0.4;
+}
+
+.aboutForm .aboutFormInner__subscribeFormText ::-ms-input-placeholder {
+  font-family: Hind Siliguri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #030D15;
+  opacity: 0.4;
+}
+
+.aboutForm .aboutFormInner__subscribeFormText ::placeholder {
+  font-family: Hind Siliguri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #030D15;
+  opacity: 0.4;
+}
+
+.aboutForm .aboutFormInner__subscribeFormSubmit {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #247CC0;
+  border: none;
+  cursor: pointer;
+  padding: 13px 26px 14px;
+}
+
 @media screen and (max-width: 992px) {
   .container {
     padding-left: 15px;

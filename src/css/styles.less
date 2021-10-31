@@ -501,3 +501,68 @@
         }
     }
 }
+.aboutForm{
+    background: #F4F9FC;
+    padding: 100px 0;
+    .aboutFormInner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__text{
+            max-width: 360px;
+            width: 100%;
+            &General{
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 40px;
+                color: #030D15;
+                padding-bottom: 8px;
+            }
+            &SubGeneral{
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                color: #030D15;
+                opacity: 0.6;
+            }
+        }
+        &__subscribe{
+            width: 100%;
+            &Form{
+                display: flex;
+                justify-content: end;
+                &Text{
+                    font-family: Hind Siliguri;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #030D15;
+                    padding: 15px 26px 14px;
+                    max-width: 335px;
+                    width: 100%;
+                    ::placeholder{
+                        font-family: Hind Siliguri;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #030D15;
+                        opacity: 0.4;
+                    }
+                }
+                &Submit{
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 23px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    background: #247CC0;
+                    border: none;
+                    cursor: pointer;
+                    padding: 13px 26px 14px;
+                }
+            }
+        }
+    }
+}
