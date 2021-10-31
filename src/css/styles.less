@@ -1,7 +1,7 @@
 @import "smart-grid.less";
 @import "global.less";
 
-.footer{
+.header{
     &__menu{
         padding: 27px 0 28px;
         display: flex;
@@ -318,7 +318,7 @@
     }
 }
 .catalog{
-    padding-bottom: 100px;
+    padding-bottom: 130px;
     .catalogNavigation{
         &__subTitle{
             text-align: center;
@@ -532,6 +532,7 @@
                 display: flex;
                 justify-content: end;
                 &Text{
+                    border: none;
                     font-family: Hind Siliguri;
                     font-style: normal;
                     font-weight: normal;
@@ -562,6 +563,53 @@
                     cursor: pointer;
                     padding: 13px 26px 14px;
                 }
+            }
+        }
+    }
+}
+.footer{
+    background: #030D15;
+    padding: 75px 0 40px;
+    .footerInner{
+        .row-flex();
+        
+        .footerColumnThree{
+            .col();
+            .size(3);
+
+            &__link{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 23px;
+                color: #FFFFFF;
+            }
+            &__images{
+                width: 67px;
+                padding-bottom: 22px;
+            }
+        }
+        .footerColumn{
+            .col();
+            .size(2);
+
+            a{
+                cursor: pointer;
+            }
+            &Title{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
+                padding-bottom: 26px;
+            }
+            &Text{
+                display: block;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 23px;
+                color: #FFFFFF;
+                opacity: 0.6;
+                padding-bottom: 15px;
             }
         }
     }
