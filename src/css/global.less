@@ -15,3 +15,61 @@ a, h1, h2, h3, p, li{
 a{
     text-decoration: none;
 }
+
+.generalSubTitle{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    color: #C72535;
+    opacity: 0.6;
+}
+
+.generalTitle{
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 71px;
+    color: #030D15;
+}
+
+.textInfoPrice{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    color: #030D15;
+    &Old{
+        position: relative;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 27px;
+        text-decoration-line: line-through;
+        color: #030D15;
+        opacity: 0.5;
+        padding-left: 10px;
+        &::after{
+            content: '/';
+            left: 2px;
+            position: absolute;
+            font-family: Hind Siliguri;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 27px;
+            color: #030D15;
+            opacity: 0.5;
+        }
+    }
+}
+
+.menuHover{
+    display: none;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    transition: 0.2s all;
+    &__item{
+        border: none;
+        background-color: inherit;
+        cursor: pointer;
+    }
+}

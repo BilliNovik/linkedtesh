@@ -151,7 +151,7 @@
     }
 }
 .offerProduct{
-    padding-bottom: 75px;
+    padding-bottom: 45px;
     .offerProductItems{
         .row-flex();
         
@@ -161,7 +161,8 @@
             
             display: flex;
             justify-content: space-between;
-            
+            margin-bottom: 30px;
+
             &__visual{
                 position: relative;
                 display: flex;
@@ -203,40 +204,14 @@
                     padding-bottom: 20px;
                 }
                 &Price{
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 27px;
-                    color: #030D15;
                     padding-bottom: 10px;
-                    &Old{
-                        position: relative;
-                        font-weight: 300;
-                        font-size: 14px;
-                        line-height: 27px;
-                        text-decoration-line: line-through;
-                        color: #030D15;
-                        opacity: 0.5;
-                        padding-left: 10px;
-                        &::after{
-                            content: '/';
-                            left: 2px;
-                            position: absolute;
-                            font-family: Hind Siliguri;
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 14px;
-                            line-height: 27px;
-                            color: #030D15;
-                            opacity: 0.5;
-                        }
-                    }
                 }
             }
         }
     }
 }
 .interest{
-    padding: 75px 0 55px;
+    padding: 75px 0 40px;
     .interestItems{
         .row-flex();
 
@@ -244,6 +219,7 @@
             .col();
             .size(6);
 
+            margin-bottom: 15px;
             position: relative;
             background: linear-gradient(257.26deg, #008BF0 -13.2%, #D943C9 130.95%);
             border: 1px solid rgba(0, 0, 0, 0.1);
@@ -282,6 +258,245 @@
             &__visual{
                 position: absolute;
                 right: 0;
+            }
+        }
+    }
+}
+.about{
+    padding: 55px 0 62.5px;
+    .aboutInner{
+        display: flex;
+        justify-content: space-between;
+        &__visual{
+            &Image{
+                max-width: 610px;
+                width: 100%;
+                transform: translateX(-58px);
+            }
+        }
+        &__text{
+            max-width: 460px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 50px 0 65px;
+
+            &Bottom{
+                &Text{
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #030D15;
+                    opacity: 0.6;
+                    padding-bottom: 25px;
+                }
+                &List{
+                    padding: 15px 0;
+                    &Item{
+                        position: relative;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 27px;
+                        color: #030D15;
+                        margin-bottom: 20px;
+                        padding-left: 31px;
+                        &::before{
+                            content: '';
+                            left: 0;
+                            top: 4px;
+                            display: block;
+                            position: absolute;
+                            width: 18px;
+                            height: 18px;
+                            background: url(../img/textBottomListItem=after.svg)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.catalog{
+    padding-bottom: 100px;
+    .catalogNavigation{
+        &__subTitle{
+            text-align: center;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__list{
+            padding: 22px 0;
+            display: flex;
+            justify-content: center;
+            &Item{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 23px;
+                text-transform: uppercase;
+                color: #030D15;
+                opacity: 0.6;
+                margin: 0 20px;
+                border: 0;
+                background-color: inherit;
+                cursor: pointer;
+                &--active{
+                    color: #C72535;
+                }
+            }
+        }
+    }
+    .catalogCards{
+        padding: 12px 0 25px;
+        .row-flex();
+
+        .catalogCard{
+            .col();
+            .size(4);
+            
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            position: relative;
+            background: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 35px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            &__top{
+                &DiscountText{
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 27px;
+                    color: #030D15;
+                }
+            }
+            &__bottom{
+                margin-top: auto;
+            }
+            &__hoverMenu{
+                &GeneralText{
+                    font-weight: 600;
+                    line-height: 40px;
+                    font-size: 25px;
+                    color: #030D15;
+                    transition: 0.3s all;
+                }
+                &Color{
+                    display: none;
+                    position: absolute;
+                    right: 35px;
+                    bottom: 40px;
+                    &Item{
+                        padding: 3px;
+                        margin: 0 10px;
+                        div{
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50px;
+                        }
+                        &--active{
+                            border: 1px solid #030D15;
+                            border-radius: 50px;
+                        }
+                    }
+                    &Item:first-of-type{
+                        margin-left: 0;
+                    }
+                    &Item:last-of-type{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .catalogCard:hover{
+            .catalogCard__hoverMenu{
+                &GeneralText{
+                    display: none;
+                }
+                .menuHover{
+                    display: flex;
+                }
+                &Color{
+                    display: flex;
+                }
+            }
+        }
+    }
+    &__link{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 23px;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        color: #030D15;
+        cursor: pointer;
+    }
+}
+.newCatalog{
+    padding-bottom: 50px;
+    &Navigation{
+        &__subTitle{
+            text-align: center;
+        }
+        &__title{
+            text-align: center;
+            padding-bottom: 7px;
+        }
+        &__text{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #030D15;
+            opacity: 0.6;
+            padding-bottom: 10px;
+            max-width: 457px;
+            margin: 0 auto;
+        }
+    }
+    .newCatalogColumn{
+        .row-flex();
+    
+        .newCatalogCards{
+            .col();
+            .size(4);
+
+            padding: 40px 0;
+            .newCatalogCard{
+                position: relative;
+                margin-bottom: 35px;
+                padding: 20px 27px;
+                background: #FFFFFF;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+
+                &__price{
+                    display: none;
+                    position: absolute;
+                    left: 27px;
+                    top: 20px;
+                }
+                &__visual{
+                    padding-bottom: 20px;
+                }
+                &__menuHover{
+                    padding-bottom: 0px;
+                    position: absolute;
+                    left: 27px;
+                    bottom: 20px;
+                }
+            }
+            .newCatalogCard:hover{
+                .newCatalogCard__price{
+                    display: block;
+                }
+                .menuHover{
+                    display: flex;
+                    width: 283px;
+                }
             }
         }
     }
